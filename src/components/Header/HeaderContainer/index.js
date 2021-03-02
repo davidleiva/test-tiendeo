@@ -8,9 +8,7 @@ const HeaderContainer = () => {
         <div
             style={{
                 display: 'flex',
-                width: 'calc(100% - 169px)',
-                paddingLeft: '24px',
-                paddingRight: '24px',
+                width: 'calc(100% - 120px)',
                 ...$purpleCyanGradient
             }}
             className="HeaderContainer"

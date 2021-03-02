@@ -9,7 +9,7 @@ const UserPopOver = () => {
                 alignItems: 'center',
                 borderLeft: '1px solid rgba(255,255,255,0.5)',
                 paddingLeft: '24px',
-                paddingRight: '24px',
+                paddingRight: '40px',
                 cursor: 'pointer'
             }}    
         >

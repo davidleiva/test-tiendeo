@@ -4,7 +4,7 @@ import Grid from '@material-ui/core/Grid';
 
 const SearchInput = () => {
     return (
-        <div className="SearchInput c-white no-border">
+        <div className="SearchInput c-white no-border" style={{paddingLeft: '40px'}}>
             <Grid container spacing={1} alignItems="flex-end">
                 <Grid item>
                     <SearchIcon />
