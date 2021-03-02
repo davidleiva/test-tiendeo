@@ -1,0 +1,10 @@
+.MainMenuItem--Active {
+    border-left: 4px solid red;
+
+    
+}
+
+.MainMenuItem--Active .MuiSvgIcon-root, 
+.MainMenuItem--Active .MuiButtonBase-root {
+    margin-left: -4px;
+}

@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.c-white .MuiInputBase-input,
+.c-white label,
+.c-white.MuiInputBase-root {
+  color: white !important;
+}
+
+.no-border .MuiInput-underline:after,
+.no-border .MuiInput-underline:before {
+  content: none;
+}
