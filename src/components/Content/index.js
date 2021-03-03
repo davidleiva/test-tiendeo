@@ -7,6 +7,7 @@ const Content = () => {
     return (
         <div className="Content">
             <Typography
+                className="bodyColor"
                 style={{
                     textAlign: 'left',
                     fontSize: '28px',
@@ -19,7 +20,7 @@ const Content = () => {
                     colorSchemeClass={'PinkGradient'}
                     tasks={[
                         {
-                            title: 'Company website redesign',
+                            title: 'Company website redesign.',
                             totalComments: 2,
                             totalAttached: 1
                         }
@@ -31,7 +32,7 @@ const Content = () => {
                     colorSchemeClass={'OrangeGradient'}
                     tasks={[
                         {
-                            title: 'Company website redesign',
+                            title: 'Company website redesign.',
                             totalComments: 1,
                             totalAttached: 3
                         }
@@ -42,7 +43,7 @@ const Content = () => {
                     colorSchemeClass={'BlueGradient'}
                     tasks={[
                         {
-                            title: 'Company website redesign',
+                            title: 'Company website redesign.',
                             totalComments: 1,
                             totalAttached: 1
                         }
@@ -53,7 +54,7 @@ const Content = () => {
                     colorSchemeClass={'GreenGradient'}
                     tasks={[
                         {
-                            title: 'Company website redesign',
+                            title: 'Company website redesign.',
                             totalComments: 3,
                             totalAttached: 3
                         }

@@ -14,7 +14,9 @@ const BrandContainer = () => {
                 height: $headerHeightDesktop,
                 display: 'flex',
                 justifyContent: 'center',
-                alignItems: 'center'
+                alignItems: 'center',
+                backgroundColor: '#868fdb',
+                fontWeight: 600
             }}
         >
             <Hidden smUp>

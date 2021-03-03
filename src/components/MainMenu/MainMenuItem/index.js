@@ -14,13 +14,16 @@ const MainMenuItem = ({labelText, icon, active, style}) => {
                 ...style
             }}
             className={classNames({
+                'MainMenuItem': true,
                 'MainMenuItem--Active': active
             })}
-        >   
-            { icon }
-            <Button>
-                <Typography style={{textTransform: "capitalize"}}>{labelText}</Typography>
-            </Button>
+        >
+            <div className="MainMenuItem__Content">
+                <Button>
+                    { icon }
+                    <Typography style={{textTransform: "capitalize"}}>{labelText}</Typography>
+                </Button>
+            </div>
         </div>
     );
 }

@@ -11,11 +11,10 @@ export default function TasksContainer({
     title,
     colorSchemeClass,
     tasks,
-    className
 }) {
     return (
         <div className={Classnames([
-            'TasksContainer',colorSchemeClass
+            'TasksContainer bodyColor',colorSchemeClass
         ])}>
             <Card className={'TasksContainer__Child'}>
                 <CardContent>
@@ -34,7 +33,17 @@ export default function TasksContainer({
                 <CardActions style={{
                     justifyContent: 'center'
                 }}>
-                    <Button size="small" endIcon={<ControlPointIcon />}>Add task</Button>
+                    <Button
+                        className="bodyColor"
+                        size="small"
+                        endIcon={<ControlPointIcon />}
+                        style={{
+                            textTransform: 'capitalize',
+                            fontSize: '16px',
+                            marginBottom: '4px',
+                            fontWeight: '400',
+                            opacity: '0.8'
+                    }}>Add task</Button>
                 </CardActions>
             </Card>
         </div>

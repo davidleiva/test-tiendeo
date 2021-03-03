@@ -10,7 +10,10 @@ const SearchInput = () => {
                     <SearchIcon />
                 </Grid>
                 <Grid item>
-                    <TextField id="input-with-icon-grid" label="Search for tasks..." />
+                    <TextField
+                        id="input-with-icon-grid"
+                        label="Search for tasks..."
+                    />
                 </Grid>
             </Grid>
         </div>

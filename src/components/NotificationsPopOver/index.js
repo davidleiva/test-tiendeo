@@ -1,4 +1,4 @@
-import { Button } from '@material-ui/core';
+import { Button, Badge } from '@material-ui/core';
 import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 
 const NotificationsPopOver = () => {
@@ -11,7 +11,11 @@ const NotificationsPopOver = () => {
                 cursor: 'pointer'
             }}
         >
-            <Button style={{ color: 'white'}}><NotificationsNoneIcon /></Button>
+            <Button style={{ color: 'white'}}>
+                <Badge color="secondary" variant="dot">
+                    <NotificationsNoneIcon />
+                </Badge>
+            </Button>
         </div>
     );
 }

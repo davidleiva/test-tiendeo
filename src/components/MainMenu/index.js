@@ -13,6 +13,7 @@ const MainMenu = () => {
 
     return (
         <Drawer 
+            className="MainMenu__Drawer"
             variant='permanent'
             anchor={'left'} 
             open={true} 
@@ -38,7 +39,8 @@ const MainMenu = () => {
                 flexDirection: 'column',
             }}
         >
-            <div 
+            <div
+                className="MainMenu__Container"
                 style={{
                     width: '120px',
                     display: 'flex',
@@ -83,6 +85,16 @@ const MainMenu = () => {
                     }}
                 />
             </div>
+            <svg style={{
+                width: '0',
+                height: '0',
+                position: 'absolute',
+            }} aria-hidden="true" focusable="false">
+                <linearGradient id="my-cool-gradient" x2="1" y2="1">
+                    <stop offset="0%" stopColor="#9ea7fc" />
+                    <stop offset="100%" stopColor="#6db3f7"  />
+                </linearGradient>
+            </svg>
         </Drawer>
     );
 }

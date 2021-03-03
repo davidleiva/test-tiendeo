@@ -1,10 +1,30 @@
 .MainMenuItem--Active {
-    border-left: 4px solid red;
+    background-color: #9ea7fc;
+    background: linear-gradient(180deg, #9ea7fc 0%, #6db3f7 100%);
+    position: relative;
+    padding-left: 4px;
+}
 
-    
+.MainMenuItem--Active .MainMenuItem__Content {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .MainMenuItem--Active .MuiSvgIcon-root, 
 .MainMenuItem--Active .MuiButtonBase-root {
     margin-left: -4px;
+}
+
+.shape .gradient-bg {
+    fill: url(#header-shape-gradient) #fff;
+  }
+  
+#header-shape-gradient {
+--color-stop: #9ea7fc;
+--color-bot: #6db3f7;
 }
