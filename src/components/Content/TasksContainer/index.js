@@ -4,8 +4,9 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import TaskTicket from '../TaskTicket';
-import { TableSortLabel } from '@material-ui/core';
-  
+import Classnames from 'classnames';
+import ControlPointIcon from '@material-ui/icons/ControlPoint';
+
 export default function TasksContainer({
     title,
     colorSchemeClass,
@@ -13,22 +14,29 @@ export default function TasksContainer({
     className
 }) {
     return (
-        <Card className={'TasksContainer'}>
-            <CardContent>
-            <Typography color="textSecondary" gutterBottom>
-                {title}
-            </Typography>
-                { tasks.map(task => (
-                    <TaskTicket
-                        title={task.title}
-                        totalComments={task.totalComments}
-                        totalAttached={task.totalAttached}
-                    />
-                ))}
-            </CardContent>
-            <CardActions>
-                <Button size="small">Add task</Button>
-            </CardActions>
-        </Card>
+        <div className={Classnames([
+            'TasksContainer',colorSchemeClass
+        ])}>
+            <Card className={'TasksContainer__Child'}>
+                <CardContent>
+                    <Typography color="textSecondary" style={{fontSize: '20px', marginBottom: '24px'}}>
+                        {title}
+                    </Typography>
+                        { tasks.map(task => (
+                            <TaskTicket
+                                colorSchemeClass={colorSchemeClass}
+                                title={task.title}
+                                totalComments={task.totalComments}
+                                totalAttached={task.totalAttached}
+                            />
+                        ))}
+                </CardContent>
+                <CardActions style={{
+                    justifyContent: 'center'
+                }}>
+                    <Button size="small" endIcon={<ControlPointIcon />}>Add task</Button>
+                </CardActions>
+            </Card>
+        </div>
     );
 }

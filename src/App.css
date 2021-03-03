@@ -19,12 +19,53 @@
 
 .TasksContainer {
   width: 25%;
-  height: 200px;
+  min-height: 200px;
   margin-right: 20px;
-  border-top: 4px solid red;
+  border-radius: 4px;
+  padding-top: 4px;
+}
+
+.TasksContainer .TasksContainer__Child.MuiPaper-root.MuiCard-root {
+  border-radius: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f6f8fc;
 }
 
 .TasksContainer:last-of-type {
   margin-right: 0
+}
+
+.PinkGradient {
+  background: #cb7feb;
+  background: linear-gradient(90deg, #cb7feb 0%, #df758d 100%);
+}
+
+.OrangeGradient {
+  background: #ff9884;
+  background: linear-gradient(90deg, #ff9884 0%, #ffb74e 100%);
+}
+
+
+.BlueGradient {
+  background: #9ea7fc;
+  background: linear-gradient(90deg, #9ea7fc 0%, #6db3f7 100%);
+}
+
+.GreenGradient {
+  background: #7ed4a9;
+  background: linear-gradient(90deg, #7ed4a9 0%, #81d6ee 100%);
+}
+
+.PriorityBadge {
+  color: white;
+  padding: 3px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  min-width: 88px;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: -0.2px;
+  box-sizing: border-box;
 }
 
